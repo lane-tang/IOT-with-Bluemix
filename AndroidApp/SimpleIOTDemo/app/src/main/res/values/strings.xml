@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SimpleIOTDemo</string>
+    <string name="a_simple_iot_project">A Simple IOT Project</string>
+    <string name="made_by_lane_tang">made by lane tang</string>
+    <string name="powered_by_bluemix">Powered by Bluemix</string>
+    <string name="login">Connect</string>
+    <!-- DashBoard value -->
+    <string name="tag_device_status">Device status</string>
+    <string name="tag_dev_temperature">Device temperature :</string>
+    <string name="tag_dev_memory_usage">Memory Usage : </string>
+    <string name="cpu_load">CPU Load : </string>
+    <string name="sine">Sine :</string>
+    <string name="tag_light_control">Light Control</string>
+    <string name="turn_on">On</string>
+    <string name="turn_off">Off</string>
+    <string name="tag_motion_sensor">Motion Sensor</string>
+    <string name="tag_temp_sensor">Temperature Sensor</string>
+    <string name="logout">Disconnect</string>
+    <string name="tag_temp_symbol">°C</string>
+    <string name="number_0">0</string>
+    <string name="tag_no_data">No Data</string>
+    <string name="tag_humi_symbol">%</string>
+
+    <!-- DashBoard Activity -->
+    <string name="connect">Connected</string>
+    <string name="disconnect">Disconnected, Please check your internet connection</string>
+    <string name="error_connect">Failed to connect</string>
+
+</resources>

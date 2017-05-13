@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.lanetang.simpleiotdemo.DashboardActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tag_dev_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/tag_device_status"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/tag_dev_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tag_dev_status"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/tag_dev_temperature"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_dev_temp_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tag_dev_status"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@+id/tag_dev_temp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    tools:text="0" />
+
+                <TextView
+                    android:id="@+id/tag_temp_symbol_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tag_dev_status"
+                    android:layout_toEndOf="@id/tv_dev_temp_value"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="@string/tag_temp_symbol"/>
+
+                <TextView
+                    android:id="@+id/tag_dev_memory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tag_dev_temp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/tag_dev_memory_usage"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_dev_memory_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tag_dev_temp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/tag_dev_memory"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    tools:text="0" />
+
+                <TextView
+                    android:id="@+id/tag_dev_cpu_load"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tag_dev_memory"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/cpu_load"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_dev_cpu_load"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tag_dev_memory"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/tag_dev_cpu_load"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    tools:text="0" />
+
+                <TextView
+                    android:id="@+id/tag_dev_sine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tag_dev_cpu_load"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/sine"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_dev_sine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tag_dev_cpu_load"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/tag_dev_sine"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    tools:text="0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tag_light_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/tag_light_control"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/btn_turn_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tag_light_control"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/turn_on"/>
+
+                <Button
+                    android:id="@+id/btn_turn_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tag_light_control"
+                    android:layout_toEndOf="@id/btn_turn_on"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/turn_off"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:padding="8dp">
+                <TextView
+                    android:id="@+id/tag_motion_sensor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/tag_motion_sensor"
+                    android:textAppearance="?android:textAppearanceLarge"/>
+
+                <TextView
+                    android:id="@+id/tv_motion_sensor_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tag_motion_sensor"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="40sp"
+                    android:text="@string/tag_no_data"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:padding="8dp">
+                <TextView
+                    android:id="@+id/tag_temp_sensor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/tag_temp_sensor"
+                    android:textAppearance="?android:textAppearanceLarge"/>
+
+                <TextView
+                    android:id="@+id/tv_temp_sensor_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tag_temp_sensor"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="96dp"
+                    android:textSize="56sp"
+                    android:text="@string/number_0"/>
+
+                <TextView
+                    android:id="@+id/tag_temp_symbol_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_temp_sensor_value"
+                    android:layout_alignBottom="@id/tv_temp_sensor_value"
+                    android:layout_toEndOf="@id/tv_temp_sensor_value"
+                    android:layout_marginStart="8dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="@string/tag_temp_symbol"/>
+
+                <TextView
+                    android:id="@+id/tv_humi_sensor_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tag_temp_sensor"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_toEndOf="@id/tag_temp_symbol_2"
+                    android:textSize="56sp"
+                    android:text="@string/number_0"/>
+
+                <TextView
+                    android:id="@+id/tag_humi_symbol_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_temp_sensor_value"
+                    android:layout_alignBottom="@id/tv_temp_sensor_value"
+                    android:layout_toEndOf="@id/tv_humi_sensor_value"
+                    android:layout_marginStart="8dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="@string/tag_humi_symbol"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/holo_red_light"
+                android:text="@string/logout"/>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</ScrollView>
+
+

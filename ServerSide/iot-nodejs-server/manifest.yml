@@ -1,0 +1,8 @@
+---
+applications:
+- name: iot-nodejs-server
+  random-route: true
+  memory: 256M
+  services:
+   - iot-python
+   - iot-mongo-database

@@ -1,0 +1,50 @@
+{
+  "iotf-service": [
+    {
+      "credentials": {
+        "iotCredentialsIdentifier": "a2g6k39sl6r5",
+        "mqtt_host": "wyagbw.messaging.internetofthings.ibmcloud.com",
+        "mqtt_u_port": 1883,
+        "mqtt_s_port": 8883,
+        "http_host": "wyagbw.internetofthings.ibmcloud.com",
+        "org": "wyagbw",
+        "apiKey": "a-wyagbw-9vnedl2ngv",
+        "apiToken": "9Q&7PJ8HK7rHmMPKG("
+      },
+      "syslog_drain_url": null,
+      "label": "iotf-service",
+      "provider": null,
+      "plan": "iotf-service-free",
+      "name": "iot-python",
+      "tags": [
+        "internet_of_things",
+        "Internet of Things",
+        "ibm_created",
+        "ibm_dedicated_public",
+        "lite"
+      ]
+    }
+  ],
+  "compose-for-mongodb": [
+    {
+      "credentials": {
+        "db_type": "mongodb",
+        "name": "bmix-dal-yp-d9148396-4234-4bcb-839c-6da6ce892b1e",
+        "uri_cli": "mongo --ssl --sslAllowInvalidCertificates sl-us-south-1-portal.0.dblayer.com:15401/admin -u admin -p XZTAEFYXJIQQBRCE",
+        "ca_certificate_base64": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURrekNDQW51Z0F3SUJBZ0lFV1JNUWdqQU5CZ2txaGtpRzl3MEJBUTBGQURCTE1Va3dSd1lEVlFRRERFQmkKWldocGJtUjBhR1Z6YUdGa2IzZDBiMnh2YjJ0QVoyMWhhV3d1WTI5dExUUTRNRGswWkRnMU1XVTJOMll3TTJabQpabVF4TVRrek9EazVNRGc1WkdJd01CNFhEVEUzTURVeE1ERXpNRGN4TkZvWERUTTNNRFV4TURFek1EQXdNRm93ClN6RkpNRWNHQTFVRUF3eEFZbVZvYVc1a2RHaGxjMmhoWkc5M2RHOXNiMjlyUUdkdFlXbHNMbU52YlMwME9EQTUKTkdRNE5URmxOamRtTURObVptWmtNVEU1TXpnNU9UQTRPV1JpTURDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRApnZ0VQQURDQ0FRb0NnZ0VCQU1iS0M0ZWR0UTkycHU1OTd1cWd2NFBGTVZGVFdSZ25kaDc1NEdoTExzempWQkJSCmsrckx1UHRtMTBpZTRNQlhlbDNSak5rUUN5cUttUCtuT2dCZ01NQU54c2kvME5IaGV5Y3dkTXVwcXVjQ0N2N28KWXBUekUrUTVCUkROK0IxRU1iUDk1bGV4cHhMdkk5N0JndVhIT0FZR2VHVzJWTlRacGxnd0w0QXl1WHY2NWlkUwpUQ1g3YlFvRmdmV2pKb1UrN3RjVVI4RVBjL2UxNTlUdG9wYVdRNGZOczJTdW9peGxjMnREOTdLcU5Ec29qQWVICmN0cmY5Q0lMcEUwaWJoSHc0MmdLM2pMckt4TFhhUVZDTmdDYStjT2lDU09lWkN1eVYzSURlNC9KbHYrNHNYU1kKZ3B4VEc0ZUhwRStxZERoNEFWWVBtSkhxaXZObXFLYlVQQ3Z1VGNVQ0F3RUFBYU4vTUgwd0hRWURWUjBPQkJZRQpGRVpyQnAxV0RiS0VoYXlpSWpFVEFFOWg1L25xTUE0R0ExVWREd0VCL3dRRUF3SUNCREFkQmdOVkhTVUVGakFVCkJnZ3JCZ0VGQlFjREFRWUlLd1lCQlFVSEF3SXdEQVlEVlIwVEJBVXdBd0VCL3pBZkJnTlZIU01FR0RBV2dCUkcKYXdhZFZnMnloSVdzb2lJeEV3QlBZZWY1NmpBTkJna3Foa2lHOXcwQkFRMEZBQU9DQVFFQUNNckFtUEpqM2ZEMApzdDNTU0dKQXIyTmY0WlFCY3VCK2Rrb2M4YTJkQ1dWQ3k3ZTdORFBJWVhMWFZrTDVncVVWbU9GcTJaTStzVHdoCnp5SWdiZmFReEZ0M01xaW8rVHRrQ3Q2RlAvQm9qeFpKZUdIcnA1VjZsWWxGN2phcmpEbXBpU0tHcHpUeGRQSG0KVVJJWXg2QWNrQThQbG9VcU9XVk1yckNJMy94ZkNLbkxBZWQ3RlVybEU0emJRbVB6aklDNHVuOEVtM0FmUkRtRwpPOStjTGw4VnpIMGdBa0l3WTdESzZZVGJncFFSZlh5L0JtM0t1eWo3dmVFZ1FiR21nRkgrVGFKSjlaMlUwUFJECldzNUtXWW9IS21OZ2ZWQnNsRHVxNVVhUkNlN3JLMkpDQlQvNHJEcjdHa2l4WXNTWjVKbnRHc2xrUGhUWkQ0Wm8KMlRVb2wvaExDdz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K",
+        "deployment_id": "5913107aaff3520018002c46",
+        "uri": "mongodb://admin:XZTAEFYXJIQQBRCE@sl-us-south-1-portal.0.dblayer.com:15401,sl-us-south-1-portal.1.dblayer.com:15401/admin?ssl=true"
+      },
+      "syslog_drain_url": null,
+      "label": "compose-for-mongodb",
+      "provider": null,
+      "plan": "Standard",
+      "name": "iot-mongo-database",
+      "tags": [
+        "big_data",
+        "data_management",
+        "ibm_created"
+      ]
+    }
+  ]
+}
