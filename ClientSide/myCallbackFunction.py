@@ -8,7 +8,7 @@ def ledSetup(inputPort):
     global gpioPort
     gpioPort = inputPort
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(17, GPIO.OUT)
+    GPIO.setup(gpioPort, GPIO.OUT)
 
 
 def ledCallback(cmd):
